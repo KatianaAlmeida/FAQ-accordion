@@ -3,46 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
   <title>Frontend Mentor | FAQ accordion</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(275, 100%, 97%);
+    }
+    .main_img{
+      width: 100%;
+    }
+    .faq_container{
+      position: absolute; 			
+      top:10rem; 
+      left: 25rem; 
+      bottom: 0;  
+      
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 50%;
+      height: 55%;
+    }
+    .faq_title_section{
+      display: flex;
+      flex-direction: row;
+    }
+    .faq_body_sections{
+      background-color: lightblue;
+    }
+    .question_container{
+      display: flex;
+      flex-direction: row;
+      background-color: lightcoral;
+    }
+    .answer_container_1,
+    .answer_container_2,
+    .answer_container_3,
+    .answer_container_4{
+      background-color: lightcoral;
+    }
+    .close_js{
+      display: none;
+    }
+    .open_js{
+      display: block;
+    }
   </style>
-</head>
-<body>
+  <body>
+    <img class="main_img" src="assets/images/background-pattern-desktop.svg" alt="">
+    <div class="faq_container">
+      <div class="faq_title_section">
+        <img src="assets/images/icon-star.svg" alt="">
+        <p>FAQS</p>
+      </div>
+      <div class="faq_body_sections">
+        <div class="question_container">
+          <p>What is Lorem Ipsum?</p>
+          <img class="icon_plus_1" onclick="open_and_close('answer_container_1', 'icon_plus_1', 'icon_minus_1');" src="assets/images/icon-plus.svg" alt="">
+          <img class="icon_minus_1 close_js" onclick="open_and_close('answer_container_1','icon_plus_1', 'icon_minus_1');" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div class="answer_container_1 close_js">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="faq_body_sections">
+        <div class="question_container">
+          <p>What is Lorem Ipsum?</p>
+          <img class="icon_plus_2" onclick="open_and_close('answer_container_2', 'icon_plus_2', 'icon_minus_2');" src="assets/images/icon-plus.svg" alt="">
+          <img class="icon_minus_2 close_js" onclick="open_and_close('answer_container_2','icon_plus_2', 'icon_minus_2');" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div class="answer_container_2 close_js">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="faq_body_sections">
+        <div class="question_container">
+          <p>What is Lorem Ipsum?</p>
+          <img class="icon_plus_3" onclick="open_and_close('answer_container_3', 'icon_plus_3', 'icon_minus_3');" src="assets/images/icon-plus.svg" alt="">
+          <img class="icon_minus_3 close_js" onclick="open_and_close('answer_container_3','icon_plus_3', 'icon_minus_3');" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div class="answer_container_3 close_js">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="faq_body_sections">
+        <div class="question_container">
+          <p>What is Lorem Ipsum?</p>
+          <img class="icon_plus_4" onclick="open_and_close('answer_container_4', 'icon_plus_4', 'icon_minus_4');" src="assets/images/icon-plus.svg" alt="">
+          <img class="icon_minus_4 close_js" onclick="open_and_close('answer_container_4','icon_plus_4', 'icon_minus_4');" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div class="answer_container_4 close_js">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
 
-  FAQs
-
-  What is Frontend Mentor, and how will it help me?
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    </div>
+    <script>
+      function open_and_close(answerName, icon_plus, icon_minus){
+        //console.log("Hello");
+        const answerElement = document.querySelector(`.${answerName}`);
+        const iconPlusElement = document.querySelector(`.${icon_plus}`);
+        const iconMinusElement = document.querySelector(`.${icon_minus}`);
+        
+        if(!answerElement.classList.contains('open_js')){
+          answerElement.classList.add('open_js');
+          iconPlusElement.classList.add('close_js');
+          iconMinusElement.classList.remove('close_js');
+        }else{
+          answerElement.classList.remove('open_js');
+          iconMinusElement.classList.add('close_js');
+          iconPlusElement.classList.remove('close_js');
+        }
+      }
+    </script>
+  </body>
 </html>
