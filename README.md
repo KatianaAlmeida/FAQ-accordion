@@ -25,12 +25,12 @@ Users should be able to:
 ### Screenshot
 
 ![desktop-preview](design/desktop-preview.jpg)
-![mobile-preview](design//mobile-preview.jpg)
+![mobile-preview](design/desktop-preview.jpg)
 
 ## Author
 
 - Portfolio Website - [Katiana de Almeida](https://katiana-de-almeida.onrender.com/)
-- Katiana Almeida - [Katiana@almeida](Katianaalmeida48@gmail.com)
+- Katiana Almeida - [Katianaalmeida48@gmail.com]
 - Linkdlin - [KatianaDeAlmeida](https://www.linkedin.com/in/katiana-almeida-1731ba23a/)
 
 
