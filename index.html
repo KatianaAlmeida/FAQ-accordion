@@ -4,43 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ accordion</title>
   <style>
     body{
       background-color: hsl(275, 100%, 97%);
+      font-family: "Work Sans";
     }
-    .main_img{
+    .desktop_img{
       width: 100%;
     }
+    .mobile_img{
+      width: 100%;
+      display: none;
+    }
     .faq_container{
-      position: absolute; 			
-      top:10rem; 
-      left: 25rem; 
+      position: fixed; 			
+      top:20%; 
+      left: 29%; 
       bottom: 0;  
       
-      background-color: white;
+      background-color: white; 
       border-radius: 1rem;
       padding: 2rem;
-      width: 50%;
-      height: 55%;
+      width: 38%;
+
+      max-height: fit-content;
     }
     .faq_title_section{
       display: flex;
       flex-direction: row;
     }
-    .faq_body_sections{
-      background-color: lightblue;
+    .title_icon{
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+    .title{
+      font-weight: bold;
+      font-weight: 700;
+      color: hsl(292, 42%, 14%);
     }
     .question_container{
       display: flex;
       flex-direction: row;
-      background-color: lightcoral;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+      border-bottom: 0.1rem solid rgb(223, 222, 222); 
+    }
+    .question{
+      color: hsl(292, 42%, 14%);
+      font-weight: 600;
     }
     .answer_container_1,
     .answer_container_2,
     .answer_container_3,
     .answer_container_4{
-      background-color: lightcoral;
+      color: hsl(292, 16%, 49%);
     }
     .close_js{
       display: none;
@@ -48,19 +70,35 @@
     .open_js{
       display: block;
     }
+    @media screen AND (max-width: 675px){
+      .faq_container{		
+        top:20%; 
+        left: 19%; 
+        width: 48%;
+      }
+      .desktop_img{
+        display: none;
+      }
+      .mobile_img{
+        display: flex;
+      }
+    }
   </style>
   <body>
-    <img class="main_img" src="assets/images/background-pattern-desktop.svg" alt="">
+    <img class="mobile_img" src="assets/images/background-pattern-mobile.svg" alt="">
+    <img class="desktop_img" src="assets/images/background-pattern-desktop.svg" alt="">
     <div class="faq_container">
       <div class="faq_title_section">
-        <img src="assets/images/icon-star.svg" alt="">
-        <p>FAQS</p>
+        <img class="title_icon" src="assets/images/icon-star.svg" alt="">
+        <h1 class="title">FAQS</h1>
       </div>
       <div class="faq_body_sections">
         <div class="question_container">
-          <p>What is Lorem Ipsum?</p>
-          <img class="icon_plus_1" onclick="open_and_close('answer_container_1', 'icon_plus_1', 'icon_minus_1');" src="assets/images/icon-plus.svg" alt="">
-          <img class="icon_minus_1 close_js" onclick="open_and_close('answer_container_1','icon_plus_1', 'icon_minus_1');" src="assets/images/icon-minus.svg" alt="">
+          <p class="question">What is Lorem Ipsum?</p>
+          <div>
+            <img class="icon_plus_1" onclick="open_and_close('answer_container_1', 'icon_plus_1', 'icon_minus_1');" src="assets/images/icon-plus.svg" alt="">
+            <img class="icon_minus_1 close_js" onclick="open_and_close('answer_container_1','icon_plus_1', 'icon_minus_1');" src="assets/images/icon-minus.svg" alt="">
+          </div>
         </div>
         <div class="answer_container_1 close_js">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -68,7 +106,7 @@
       </div>
       <div class="faq_body_sections">
         <div class="question_container">
-          <p>What is Lorem Ipsum?</p>
+          <p class="question">What is Lorem Ipsum?</p>
           <img class="icon_plus_2" onclick="open_and_close('answer_container_2', 'icon_plus_2', 'icon_minus_2');" src="assets/images/icon-plus.svg" alt="">
           <img class="icon_minus_2 close_js" onclick="open_and_close('answer_container_2','icon_plus_2', 'icon_minus_2');" src="assets/images/icon-minus.svg" alt="">
         </div>
@@ -78,7 +116,7 @@
       </div>
       <div class="faq_body_sections">
         <div class="question_container">
-          <p>What is Lorem Ipsum?</p>
+          <p class="question">What is Lorem Ipsum?</p>
           <img class="icon_plus_3" onclick="open_and_close('answer_container_3', 'icon_plus_3', 'icon_minus_3');" src="assets/images/icon-plus.svg" alt="">
           <img class="icon_minus_3 close_js" onclick="open_and_close('answer_container_3','icon_plus_3', 'icon_minus_3');" src="assets/images/icon-minus.svg" alt="">
         </div>
@@ -88,7 +126,7 @@
       </div>
       <div class="faq_body_sections">
         <div class="question_container">
-          <p>What is Lorem Ipsum?</p>
+          <p class="question">What is Lorem Ipsum?</p>
           <img class="icon_plus_4" onclick="open_and_close('answer_container_4', 'icon_plus_4', 'icon_minus_4');" src="assets/images/icon-plus.svg" alt="">
           <img class="icon_minus_4 close_js" onclick="open_and_close('answer_container_4','icon_plus_4', 'icon_minus_4');" src="assets/images/icon-minus.svg" alt="">
         </div>
