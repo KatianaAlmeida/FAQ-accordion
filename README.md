@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop-preview](design/desktop-preview.jpg)
-![mobile-preview](design/desktop-preview.jpg)
+![mobile-preview](design/mobile-design.jpg)
 
 ## Author
 
