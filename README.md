@@ -24,19 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+![desktop-preview](design/desktop-preview.jpg)
+![mobile-preview](design//mobile-preview.jpg)
 
 ## Author
 
-- Portfolio Website - [Add your name here](https://www.your-site.com)
-- Katiana Almeida - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Linkdlin - [@yourusername](https://www.twitter.com/yourusername)
+- Portfolio Website - [Katiana de Almeida](https://katiana-de-almeida.onrender.com/)
+- Katiana Almeida - [Katiana@almeida](Katianaalmeida48@gmail.com)
+- Linkdlin - [KatianaDeAlmeida](https://www.linkedin.com/in/katiana-almeida-1731ba23a/)
 
 
 
