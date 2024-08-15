@@ -4,14 +4,9 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [The challenge](#the-challenge)
 - [Author](#author)
-
-
-## Overview
+- [Screenshot](#screenshot)
 
 ### The challenge
 
@@ -22,16 +17,16 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![desktop-preview](design/desktop-preview.jpg)
-![mobile-preview](design/mobile-design.jpg)
-
 ## Author
 
 - Portfolio Website - [Katiana de Almeida](https://katiana-de-almeida.onrender.com/)
 - Katiana Almeida - [Katianaalmeida48@gmail.com]
 - Linkdlin - [KatianaDeAlmeida](https://www.linkedin.com/in/katiana-almeida-1731ba23a/)
+
+### Screenshot
+
+![desktop-preview](design/desktop-preview.jpg)
+![mobile-preview](design/mobile-design.jpg)
 
 
 
